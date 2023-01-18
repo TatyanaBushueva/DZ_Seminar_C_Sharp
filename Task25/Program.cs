@@ -14,7 +14,7 @@ if (numberB > 0)
     int degreeNumber = DegreeNumber(numberA, numberB);
     Console.WriteLine($"{numberA} в степени {numberB} = {degreeNumber}");
 }
-else System.Console.WriteLine("Введеное число B не является натуральным");
+else Console.WriteLine("Введеное число B не является натуральным");
 
 int DegreeNumber(int num1, int num2)
 {

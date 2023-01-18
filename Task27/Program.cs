@@ -14,7 +14,7 @@ if (number > 0)
     int sumNumber = SumNumber(number);
     Console.WriteLine($"Сумма цифр в числе {number} = {sumNumber}");
 }
-else System.Console.WriteLine("Введено некоректное число");
+else Console.WriteLine("Введено некоректное число");
 
 int SumNumber(int num)
 {

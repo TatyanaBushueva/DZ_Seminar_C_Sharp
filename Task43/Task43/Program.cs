@@ -29,8 +29,8 @@ double CalculationY(double x, double k01, double b01)
 
 if (k1 != k2)
 {
-    double calculationX = CalculationX(k1, b1, k2, b2);
-    double calculationY = CalculationY(calculationX, k1, b1);
+    double calculationX = Math.Round(CalculationX(k1, b1, k2, b2), 1);
+    double calculationY = Math.Round(CalculationY(calculationX, k1, b1), 1);
     Console.WriteLine($"Точка пересечения двух прямых ({calculationX}, {calculationY})");
 }
 else Console.WriteLine("Две прямые параллельны");

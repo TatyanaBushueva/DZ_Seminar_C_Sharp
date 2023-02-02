@@ -38,13 +38,19 @@ int[] SumElementsRowsMatrix(int[,] matrix)
 
 int NumberMinElementArray(int[] arr)
 {
-    int number = 0;
-    for (int i = 1; i < arr.Length; i++)
+int number = 0;
+int min = arr[0];
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] < arr[i - 1]) number = i + 1;
-        else number = i;
+        
+        
+        if (arr[i] < min)
+        {
+            min = arr[i];
+            number = i;
+        }
     }
-    return number;
+    return number + 1;
 }
 
 
